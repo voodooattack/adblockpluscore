@@ -51,3 +51,14 @@ You can lint the code using [ESLint](http://eslint.org).
 You will need to set up ESLint and our configuration first, see
 [eslint-config-eyeo](https://hg.adblockplus.org/codingtools/file/tip/eslint-config-eyeo)
 for more information.
+
+Rebuilding the ASM.js LZMA port
+-------------------------------
+
+Running `npm run rebuild-asm` will rebuild the asm.js LZMA compression 
+code used to compress filters in memory. 
+
+This requires some heavy dependencies:
+
+- [emsdk](https://github.com/juj/emsdk)
+- [CMake](https://cmake.org/)

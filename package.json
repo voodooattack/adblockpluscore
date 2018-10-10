@@ -17,10 +17,12 @@
     "sandboxed-module": "2.0.3",
     "script-loader": "0.7.0",
     "selenium-webdriver": "^3.6.0",
+    "wasm-loader": "^1.3.0",
     "webpack": "3.5.4"
   },
   "scripts": {
     "eslint": "eslint *.js lib test chrome",
+    "rebuild-asm": "python build_asm.py",
     "test": "node test_runner.js",
     "posttest": "npm run eslint"
   }

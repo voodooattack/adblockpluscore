@@ -169,12 +169,11 @@ else
   );
 }
 
+if (unitFiles.length)
+  nodeunit.reporters.default.run(unitFiles.sort((a, b) => a < b ? -1 : 1));
+
 Promise.resolve(runBrowserTests(runnerProcesses)).catch(error =>
 {
   console.error("Failed running browser tests");
   console.error(error);
-}).then(() =>
-{
-  if (unitFiles.length)
-    nodeunit.reporters.default.run(unitFiles);
 });
