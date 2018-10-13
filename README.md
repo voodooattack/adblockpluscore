@@ -52,10 +52,10 @@ You will need to set up ESLint and our configuration first, see
 [eslint-config-eyeo](https://hg.adblockplus.org/codingtools/file/tip/eslint-config-eyeo)
 for more information.
 
-Rebuilding the ASM.js LZMA port
+Rebuilding the ASM.js LZ4 port
 -------------------------------
 
-Running `npm run rebuild-asm` will rebuild the asm.js LZMA compression 
+Running `npm run rebuild-asm` will rebuild the asm.js LZ4 compression 
 code used to compress filters in memory. 
 
 This requires some heavy dependencies:
